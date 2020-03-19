@@ -73,6 +73,7 @@ void quit(int param)
 	float bw;
 	float dur = get_usecs() - g_start;
 	dur_in_sec = (float)dur / 1000000;
+	printf("\n================== Final Report\n");
 	printf("g_nread(bytes read) = %lld\n", (long long)g_nread);
 	printf("elapsed = %.2f sec ( %.0f usec )\n", dur_in_sec, dur);
 	bw = (float)g_nread / dur_in_sec / 1024 / 1024;
@@ -215,6 +216,10 @@ int main(int argc, char *argv[])
 	/*
 	 * actual memory access
 	 */
+	unsigned int timestamp, last_timestamp = 0, checkpoint = 0, seconds;
+	float bw = 1.0, dur = 0.0;
+	uint64_t last_g_nread = 0;
+
 	g_start = get_usecs();
 	for (i=0;; i++) {
 		switch (acc_type) {
@@ -228,7 +233,22 @@ int main(int argc, char *argv[])
 
 		if (iterations > 0 && i+1 >= iterations)
 			break;
+
+		timestamp = get_usecs() - g_start;
+		seconds = timestamp / 1000000;
+
+		if (seconds > checkpoint) {
+			dur = ((float)(timestamp - last_timestamp)) / 1000000;
+			bw = (g_nread - last_g_nread) / dur / 1024 / 1024;
+
+			last_timestamp = timestamp;
+			last_g_nread = g_nread;
+			checkpoint = seconds;
+
+			printf("[%3d sec] bw = %.3f mbps\n", seconds, bw);
+		}
 	}
+
 	printf("total sum = %ld\n", (long)sum);
 	quit(0);
 	return 0;
