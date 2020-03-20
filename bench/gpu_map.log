@@ -1,0 +1,66 @@
+memsize=16384 KB, type=read, cpuid=0
+stop at 60
+[  1 sec] bw = 342.737 mbps
+[  2 sec] bw = 502.024 mbps
+[  3 sec] bw = 639.380 mbps
+[  4 sec] bw = 709.659 mbps
+[  5 sec] bw = 811.927 mbps
+[  6 sec] bw = 940.226 mbps
+[  7 sec] bw = 916.996 mbps
+[  8 sec] bw = 800.822 mbps
+[  9 sec] bw = 738.198 mbps
+[ 10 sec] bw = 569.172 mbps
+[ 11 sec] bw = 503.562 mbps
+[ 12 sec] bw = 434.102 mbps
+[ 13 sec] bw = 314.056 mbps
+[ 14 sec] bw = 233.244 mbps
+[ 15 sec] bw = 130.878 mbps
+[ 16 sec] bw = 137.535 mbps
+[ 17 sec] bw = 229.744 mbps
+[ 18 sec] bw = 327.860 mbps
+[ 19 sec] bw = 439.227 mbps
+[ 20 sec] bw = 540.951 mbps
+[ 21 sec] bw = 586.763 mbps
+[ 22 sec] bw = 735.274 mbps
+[ 23 sec] bw = 843.720 mbps
+[ 24 sec] bw = 982.208 mbps
+[ 25 sec] bw = 941.226 mbps
+[ 26 sec] bw = 840.444 mbps
+[ 27 sec] bw = 735.383 mbps
+[ 28 sec] bw = 564.162 mbps
+[ 29 sec] bw = 535.444 mbps
+[ 30 sec] bw = 418.522 mbps
+[ 31 sec] bw = 314.033 mbps
+[ 32 sec] bw = 233.465 mbps
+[ 33 sec] bw = 102.127 mbps
+[ 34 sec] bw = 118.191 mbps
+[ 35 sec] bw = 211.680 mbps
+[ 36 sec] bw = 329.742 mbps
+[ 37 sec] bw = 422.344 mbps
+[ 38 sec] bw = 566.357 mbps
+[ 39 sec] bw = 622.286 mbps
+[ 40 sec] bw = 730.877 mbps
+[ 41 sec] bw = 880.040 mbps
+[ 42 sec] bw = 939.210 mbps
+[ 43 sec] bw = 912.985 mbps
+[ 44 sec] bw = 869.542 mbps
+[ 45 sec] bw = 719.988 mbps
+[ 46 sec] bw = 606.195 mbps
+[ 47 sec] bw = 553.891 mbps
+[ 48 sec] bw = 409.860 mbps
+[ 49 sec] bw = 311.579 mbps
+[ 50 sec] bw = 210.109 mbps
+[ 51 sec] bw = 120.074 mbps
+[ 52 sec] bw = 137.190 mbps
+[ 53 sec] bw = 236.221 mbps
+[ 54 sec] bw = 338.710 mbps
+[ 55 sec] bw = 411.082 mbps
+[ 56 sec] bw = 570.872 mbps
+[ 57 sec] bw = 649.481 mbps
+[ 58 sec] bw = 840.402 mbps
+[ 59 sec] bw = 1032.256 mbps
+
+================== Final Report
+g_nread(bytes read) = 34393292800
+elapsed = 60.00 sec ( 60000000 usec )
+CPU0: B/W = 546.67 MB/s | CPU0: average = 111.65 ns
